@@ -26,7 +26,7 @@ ui = {
 		var monthDay = o.date.split(".");
 		var monthIndex = monthDay[0];
 		var day = monthDay[1];
-		var monthString = new Date(2025, monthIndex, day).toLocaleString('default', { month: 'long' });
+		var monthString = new Date(2025, monthIndex-1, day).toLocaleString('default', { month: 'long' });
 		var formattedDateAsString = monthString + " " + monthDay[1] + ", 2026";
 		
 		var adjectiveText = "";
